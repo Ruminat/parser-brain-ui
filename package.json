@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Yandex Cloud UI tests (react)",
   "scripts": {
-    "dev": "cross-env PRODUCTION=false BACKEND_PORT=3000 node ./server/dev-server.js",
-    "start": "cross-env PRODUCTION=true BACKEND_PORT=3000 node ./server/production-server.js",
+    "dev": "cross-env PRODUCTION=false BACKEND_PORT=3039 node ./server/dev-server.js",
+    "start": "cross-env PRODUCTION=true BACKEND_PORT=3039 node ./server/production-server.js",
     "serve": "yarn start",
-    "build": "cross-env PRODUCTION=true BACKEND_PORT=3000 npx webpack --config webpack/config.js --env production"
+    "build": "cross-env PRODUCTION=true BACKEND_PORT=3039 npx webpack --config webpack/config.js --env production"
   },
   "main": "src/index.tsx",
   "author": "ruminat",
