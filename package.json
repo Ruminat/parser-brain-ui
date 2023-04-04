@@ -1,0 +1,40 @@
+{
+  "name": "yandex-ui",
+  "version": "1.0.0",
+  "description": "Yandex Cloud UI tests (react)",
+  "scripts": {
+    "dev": "cross-env PRODUCTION=false BACKEND_PORT=3000 node ./server/dev-server.js",
+    "start": "cross-env PRODUCTION=true BACKEND_PORT=3000 node ./server/production-server.js",
+    "serve": "yarn start",
+    "build": "cross-env PRODUCTION=true BACKEND_PORT=3000 npx webpack --config webpack/config.js --env production"
+  },
+  "main": "src/index.tsx",
+  "author": "ruminat",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.0.29",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "connect-history-api-fallback": "^2.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.36.0",
+    "express": "^4.18.2",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.2",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.2",
+    "typescript-plugin-css-modules": "^5.0.0",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-middleware": "^6.0.2"
+  },
+  "dependencies": {
+    "@gravity-ui/uikit": "^4.4.0",
+    "@reduxjs/toolkit": "^1.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "solid-js": "^1.6.16"
+  }
+}

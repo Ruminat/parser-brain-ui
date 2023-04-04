@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    // "types": ["vite/client"],
+    // "noEmit": true,
+    "isolatedModules": false,
+    "plugins": [
+      { "name": "typescript-plugin-css-modules" },
+    ],
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "types": [
+    "typePatches"
+  ]
+}
