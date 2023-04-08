@@ -16,6 +16,7 @@ const columns: TableColumnConfig<TParserActivity>[] = [
         </Link>
       ) : null,
   },
+  { id: "action", name: "Что", template: (activity) => activity.action },
   { id: "date", name: "Когда", template: (activity) => timeFromNow(activity.time) },
 ];
 

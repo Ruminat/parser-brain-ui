@@ -7,6 +7,6 @@ type TResponse = Record<TParser["id"], TParserActivity>;
 export async function getParsersStatuses(): Promise<TParserActivity[]> {
   const result = await apiGetRequest<TResponse>(`/api/get-parsers-statuses?${getAdminTokenParam()}`);
   const items = Object.values(result);
-  items.sort((a, b) => b.time - a.time);
+  items.sort((a, b) => a.time - b.time);
   return items;
 }
