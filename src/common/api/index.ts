@@ -29,7 +29,7 @@ export function apiPostRequest(path: string, body: unknown) {
 
 export async function getRequest<TResponse>(url: string): Promise<TResponse> {
   console.log("JOPA!", url);
-  const response = await fetch(url, { credentials: "omit" });
+  const response = await fetch(url);
   return response.json() as Promise<TResponse>;
 }
 
