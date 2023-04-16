@@ -1,5 +1,6 @@
 import React from "react";
 import { getAdminToken } from "../common/api";
+import { Layout } from "../layout";
 import { ParsersAdminMonitor } from "./components/AdminMonitor";
 
 export const ParserApp: React.FC = () => {
@@ -7,5 +8,9 @@ export const ParserApp: React.FC = () => {
 
   if (!token) return <>Access denied</>;
 
-  return <ParsersAdminMonitor />;
+  return (
+    <Layout>
+      <ParsersAdminMonitor />
+    </Layout>
+  );
 };

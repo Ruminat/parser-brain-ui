@@ -31,6 +31,7 @@
     "webpack-dev-middleware": "^6.0.2"
   },
   "dependencies": {
+    "@gravity-ui/navigation": "^0.4.0",
     "@gravity-ui/uikit": "^4.4.0",
     "@reduxjs/toolkit": "^1.9.3",
     "dayjs": "^1.11.7",
